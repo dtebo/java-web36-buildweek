@@ -17,7 +17,7 @@ public class Post {
     private Date postedDate;
     private String imgUrl;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "authorid")
     @JsonIgnoreProperties(value = "post", allowSetters = true)
     private Author author;

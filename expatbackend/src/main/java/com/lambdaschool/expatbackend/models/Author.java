@@ -1,6 +1,8 @@
 package com.lambdaschool.expatbackend.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -8,11 +10,21 @@ import java.util.List;
 
 @Entity
 @Table(name = "authors")
+@ApiModel(value = "Author",
+description = "This is a Post Author")
 public class Author {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @ApiModelProperty(name = "author id",
+        value = "primary key for author",
+        required = true,
+        example = "1")
     private long authorid;
 
+    @ApiModelProperty(name = "name",
+        value = "name of the author",
+        required = true,
+        example = "John Smith")
     private String name;
 
     @OneToMany(mappedBy = "author",

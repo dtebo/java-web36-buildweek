@@ -141,13 +141,11 @@ public class SeedData
         userService.save(u5);
 
         Author a1 = new Author("Darren Tebo");
-        authorService.save(a1);
 
         Post p1 = new Post("Test 1", "This is a new test post!", new Date(), "", a1);
         postService.save(p1);
 
         Author a2 = new Author("Test Dummy");
-        authorService.save(a2);
 
         Post p2 = new Post("Test 2", "Testing...testing...1,2,1,2", new Date(), "", a2);
         postService.save(p2);
