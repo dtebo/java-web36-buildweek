@@ -1,4 +1,4 @@
-package com.lambdaschool.foundation.config;
+package com.lambdaschool.expatbackend.config;
 
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;

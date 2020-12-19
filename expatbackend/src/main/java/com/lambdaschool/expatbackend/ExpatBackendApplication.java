@@ -1,4 +1,4 @@
-package com.lambdaschool.foundation;
+package com.lambdaschool.expatbackend;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -11,7 +11,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
  */
 @EnableJpaAuditing
 @SpringBootApplication
-public class FoundationApplication
+public class ExpatBackendApplication
 {
     /**
      * Connect to the system environment where environment variables live.
@@ -51,7 +51,7 @@ public class FoundationApplication
 
         if (!stop)
         {
-            SpringApplication.run(FoundationApplication.class,
+            SpringApplication.run(ExpatBackendApplication.class,
                 args);
         } else
         {

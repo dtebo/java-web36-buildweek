@@ -1,6 +1,6 @@
-package com.lambdaschool.foundation.services;
+package com.lambdaschool.expatbackend.services;
 
-import com.lambdaschool.foundation.models.ValidationError;
+import com.lambdaschool.expatbackend.models.ValidationError;
 
 import java.util.List;
 

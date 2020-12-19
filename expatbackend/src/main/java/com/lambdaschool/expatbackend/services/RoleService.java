@@ -1,6 +1,6 @@
-package com.lambdaschool.foundation.services;
+package com.lambdaschool.expatbackend.services;
 
-import com.lambdaschool.foundation.models.Role;
+import com.lambdaschool.expatbackend.models.Role;
 
 import java.util.List;
 

@@ -1,9 +1,9 @@
-package com.lambdaschool.foundation.services;
+package com.lambdaschool.expatbackend.services;
 
-import com.lambdaschool.foundation.exceptions.ResourceNotFoundException;
-import com.lambdaschool.foundation.models.User;
-import com.lambdaschool.foundation.models.Useremail;
-import com.lambdaschool.foundation.repository.UseremailRepository;
+import com.lambdaschool.expatbackend.exceptions.ResourceNotFoundException;
+import com.lambdaschool.expatbackend.models.User;
+import com.lambdaschool.expatbackend.models.Useremail;
+import com.lambdaschool.expatbackend.repository.UseremailRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

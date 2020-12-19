@@ -1,4 +1,4 @@
-package com.lambdaschool.foundation.services;
+package com.lambdaschool.expatbackend.services;
 
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.security.core.Authentication;

@@ -1,19 +1,19 @@
-package com.lambdaschool.foundation;
+package com.lambdaschool.expatbackend;
 
 import com.github.javafaker.Faker;
 import com.github.javafaker.service.FakeValuesService;
 import com.github.javafaker.service.RandomService;
-import com.lambdaschool.foundation.models.Role;
-import com.lambdaschool.foundation.models.User;
-import com.lambdaschool.foundation.models.UserRoles;
-import com.lambdaschool.foundation.models.Useremail;
-import com.lambdaschool.foundation.services.RoleService;
-import com.lambdaschool.foundation.services.UserService;
+import com.lambdaschool.expatbackend.models.*;
+import com.lambdaschool.expatbackend.services.AuthorService;
+import com.lambdaschool.expatbackend.services.PostService;
+import com.lambdaschool.expatbackend.services.RoleService;
+import com.lambdaschool.expatbackend.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Date;
 import java.util.Locale;
 
 /**
@@ -38,6 +38,12 @@ public class SeedData
      */
     @Autowired
     UserService userService;
+
+    @Autowired
+    AuthorService authorService;
+
+    @Autowired
+    PostService postService;
 
     /**
      * Generates test, seed data for our application
@@ -133,6 +139,18 @@ public class SeedData
             .add(new UserRoles(u5,
                 r2));
         userService.save(u5);
+
+        Author a1 = new Author("Darren Tebo");
+        authorService.save(a1);
+
+        Post p1 = new Post("Test 1", "This is a new test post!", new Date(), "", a1);
+        postService.save(p1);
+        
+        Author a2 = new Author("Test Dummy");
+        authorService.save(a2);
+
+        Post p2 = new Post("Test 2", "Testing...testing...1,2,1,2", new Date(), "", a2);
+        postService.save(p2);
 
         if (false)
         {

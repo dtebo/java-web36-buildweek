@@ -24,9 +24,8 @@ public class Author {
     public Author() {
     }
 
-    public Author(String name, List<Post> posts) {
+    public Author(String name) {
         this.name = name;
-        this.posts = posts;
     }
 
     public long getAuthorid() {

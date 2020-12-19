@@ -1,4 +1,4 @@
-package com.lambdaschool.foundation.exceptions;
+package com.lambdaschool.expatbackend.exceptions;
 
 /**
  * A custom exception to be used when a resource is not but is suppose to be

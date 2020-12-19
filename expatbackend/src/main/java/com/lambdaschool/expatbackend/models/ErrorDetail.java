@@ -1,4 +1,4 @@
-package com.lambdaschool.foundation.models;
+package com.lambdaschool.expatbackend.models;
 
 import java.util.ArrayList;
 import java.util.Date;

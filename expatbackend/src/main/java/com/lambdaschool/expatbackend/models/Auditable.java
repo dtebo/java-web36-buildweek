@@ -1,4 +1,4 @@
-package com.lambdaschool.foundation.models;
+package com.lambdaschool.expatbackend.models;
 
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;

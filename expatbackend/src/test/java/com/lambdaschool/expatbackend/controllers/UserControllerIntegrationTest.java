@@ -1,6 +1,6 @@
-package com.lambdaschool.foundation.controllers;
+package com.lambdaschool.expatbackend.controllers;
 
-import com.lambdaschool.foundation.FoundationApplication;
+import com.lambdaschool.expatbackend.ExpatBackendApplication;
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
 import org.junit.After;
 import org.junit.Before;
@@ -31,7 +31,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  */
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = FoundationApplication.class)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = ExpatBackendApplication.class)
 @AutoConfigureMockMvc
 @WithUserDetails(value = "admin")
 public class UserControllerIntegrationTest

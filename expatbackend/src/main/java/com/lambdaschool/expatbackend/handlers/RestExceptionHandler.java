@@ -1,9 +1,9 @@
-package com.lambdaschool.foundation.handlers;
+package com.lambdaschool.expatbackend.handlers;
 
-import com.lambdaschool.foundation.exceptions.ResourceFoundException;
-import com.lambdaschool.foundation.exceptions.ResourceNotFoundException;
-import com.lambdaschool.foundation.models.ErrorDetail;
-import com.lambdaschool.foundation.services.HelperFunctions;
+import com.lambdaschool.expatbackend.exceptions.ResourceFoundException;
+import com.lambdaschool.expatbackend.exceptions.ResourceNotFoundException;
+import com.lambdaschool.expatbackend.models.ErrorDetail;
+import com.lambdaschool.expatbackend.services.HelperFunctions;
 import org.springframework.beans.ConversionNotSupportedException;
 import org.springframework.beans.TypeMismatchException;
 import org.springframework.beans.factory.annotation.Autowired;

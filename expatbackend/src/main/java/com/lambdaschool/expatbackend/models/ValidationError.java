@@ -1,4 +1,4 @@
-package com.lambdaschool.foundation.models;
+package com.lambdaschool.expatbackend.models;
 
 /**
  * A model to report a validation error

@@ -1,7 +1,7 @@
-package com.lambdaschool.foundation.exceptions;
+package com.lambdaschool.expatbackend.exceptions;
 
 
-import com.lambdaschool.foundation.services.HelperFunctions;
+import com.lambdaschool.expatbackend.services.HelperFunctions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.error.DefaultErrorAttributes;
 import org.springframework.stereotype.Component;

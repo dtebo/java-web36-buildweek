@@ -1,7 +1,7 @@
-package com.lambdaschool.foundation.controllers;
+package com.lambdaschool.expatbackend.controllers;
 
-import com.lambdaschool.foundation.models.User;
-import com.lambdaschool.foundation.services.UserService;
+import com.lambdaschool.expatbackend.models.User;
+import com.lambdaschool.expatbackend.services.UserService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;

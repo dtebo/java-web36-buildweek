@@ -1,7 +1,7 @@
-package com.lambdaschool.foundation.services;
+package com.lambdaschool.expatbackend.services;
 
-import com.lambdaschool.foundation.exceptions.ResourceNotFoundException;
-import com.lambdaschool.foundation.models.ValidationError;
+import com.lambdaschool.expatbackend.exceptions.ResourceNotFoundException;
+import com.lambdaschool.expatbackend.models.ValidationError;
 import org.hibernate.exception.ConstraintViolationException;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

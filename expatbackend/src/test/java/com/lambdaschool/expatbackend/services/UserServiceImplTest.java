@@ -1,12 +1,12 @@
-package com.lambdaschool.foundation.services;
+package com.lambdaschool.expatbackend.services;
 
-import com.lambdaschool.foundation.FoundationApplication;
-import com.lambdaschool.foundation.exceptions.ResourceNotFoundException;
-import com.lambdaschool.foundation.models.Role;
-import com.lambdaschool.foundation.models.User;
-import com.lambdaschool.foundation.models.UserRoles;
-import com.lambdaschool.foundation.models.Useremail;
-import com.lambdaschool.foundation.repository.UserRepository;
+import com.lambdaschool.expatbackend.ExpatBackendApplication;
+import com.lambdaschool.expatbackend.exceptions.ResourceNotFoundException;
+import com.lambdaschool.expatbackend.models.Role;
+import com.lambdaschool.expatbackend.models.User;
+import com.lambdaschool.expatbackend.models.UserRoles;
+import com.lambdaschool.expatbackend.models.Useremail;
+import com.lambdaschool.expatbackend.repository.UserRepository;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -30,7 +30,7 @@ import static org.mockito.ArgumentMatchers.anyString;
  * This test class covers 100% of the methods and 100% of the lines in the UserServiceImpl.class
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = FoundationApplication.class)
+@SpringBootTest(classes = ExpatBackendApplication.class)
 public class UserServiceImplTest
 {
     @Autowired

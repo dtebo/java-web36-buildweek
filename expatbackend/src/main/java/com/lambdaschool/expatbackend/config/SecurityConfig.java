@@ -1,4 +1,4 @@
-package com.lambdaschool.foundation.config;
+package com.lambdaschool.expatbackend.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

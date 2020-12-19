@@ -1,6 +1,6 @@
-package com.lambdaschool.foundation.services;
+package com.lambdaschool.expatbackend.services;
 
-import com.lambdaschool.foundation.models.Useremail;
+import com.lambdaschool.expatbackend.models.Useremail;
 
 import java.util.List;
 

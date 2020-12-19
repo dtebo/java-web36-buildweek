@@ -1,7 +1,7 @@
-package com.lambdaschool.foundation.controllers;
+package com.lambdaschool.expatbackend.controllers;
 
-import com.lambdaschool.foundation.models.Role;
-import com.lambdaschool.foundation.services.RoleService;
+import com.lambdaschool.expatbackend.models.Role;
+import com.lambdaschool.expatbackend.services.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

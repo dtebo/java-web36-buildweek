@@ -1,10 +1,10 @@
-package com.lambdaschool.foundation.controllers;
+package com.lambdaschool.expatbackend.controllers;
 
-import com.lambdaschool.foundation.models.User;
-import com.lambdaschool.foundation.models.UserMinimum;
-import com.lambdaschool.foundation.models.UserRoles;
-import com.lambdaschool.foundation.services.RoleService;
-import com.lambdaschool.foundation.services.UserService;
+import com.lambdaschool.expatbackend.models.User;
+import com.lambdaschool.expatbackend.models.UserMinimum;
+import com.lambdaschool.expatbackend.models.UserRoles;
+import com.lambdaschool.expatbackend.services.RoleService;
+import com.lambdaschool.expatbackend.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

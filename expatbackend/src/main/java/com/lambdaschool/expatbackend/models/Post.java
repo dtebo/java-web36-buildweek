@@ -3,6 +3,7 @@ package com.lambdaschool.expatbackend.models;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name = "posts")
@@ -12,7 +13,8 @@ public class Post {
     private long postid;
 
     private String title;
-    private String description;
+    private String body;
+    private Date postedDate;
     private String imgUrl;
 
     @ManyToOne
@@ -23,9 +25,10 @@ public class Post {
     public Post() {
     }
 
-    public Post(String title, String description, String imgUrl, Author author) {
+    public Post(String title, String body, Date postedDate, String imgUrl, Author author) {
         this.title = title;
-        this.description = description;
+        this.body = body;
+        this.postedDate = postedDate;
         this.imgUrl = imgUrl;
         this.author = author;
     }
@@ -46,12 +49,20 @@ public class Post {
         this.title = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getBody() {
+        return body;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    public Date getPostedDate() {
+        return postedDate;
+    }
+
+    public void setPostedDate(Date postedDate) {
+        this.postedDate = postedDate;
     }
 
     public String getImgUrl() {
@@ -75,7 +86,8 @@ public class Post {
         return "Post{" +
                 "postid=" + postid +
                 ", title='" + title + '\'' +
-                ", description='" + description + '\'' +
+                ", body='" + body + '\'' +
+                ", postedDate=" + postedDate +
                 ", imgUrl='" + imgUrl + '\'' +
                 ", author=" + author +
                 '}';

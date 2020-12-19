@@ -1,4 +1,4 @@
-package com.lambdaschool.foundation.config;
+package com.lambdaschool.expatbackend.config;
 
 import org.h2.tools.Server;
 import org.springframework.beans.factory.annotation.Value;

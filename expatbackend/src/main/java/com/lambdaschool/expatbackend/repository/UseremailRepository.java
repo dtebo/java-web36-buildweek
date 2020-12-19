@@ -1,6 +1,6 @@
-package com.lambdaschool.foundation.repository;
+package com.lambdaschool.expatbackend.repository;
 
-import com.lambdaschool.foundation.models.Useremail;
+import com.lambdaschool.expatbackend.models.Useremail;
 import org.springframework.data.repository.CrudRepository;
 
 /**
