@@ -145,7 +145,7 @@ public class SeedData
 
         Post p1 = new Post("Test 1", "This is a new test post!", new Date(), "", a1);
         postService.save(p1);
-        
+
         Author a2 = new Author("Test Dummy");
         authorService.save(a2);
 
