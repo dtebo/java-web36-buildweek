@@ -53,4 +53,13 @@ public class AuthorController {
 
         return new ResponseEntity<>(newAuthor, authorHeaders, HttpStatus.CREATED);
     }
+
+    @PutMapping(value = "/author/{authorid}",
+                consumes = {"application/json"},
+                produces = {"application/json"})
+    public ResponseEntity<?> updateAuthor(@Valid @RequestBody Author author, long id){
+        author.setAuthorid(id);
+        authorService.save(author);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
 }
