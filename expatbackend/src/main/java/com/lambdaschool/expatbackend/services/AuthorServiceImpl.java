@@ -57,12 +57,12 @@ public class AuthorServiceImpl implements AuthorService {
 
         newAuthor.getPosts().clear();
         for(Post p : author.getPosts()){
-            Post newPost = new Post();
-            newPost.setTitle(p.getTitle());
-            newPost.setBody(p.getBody());
-            newPost.setImgUrl(p.getImgUrl());
-            newPost.setPostedDate(p.getPostedDate());
-            newPost.setAuthor(p.getAuthor());
+            Post newPost = postRepository.findById(p.getPostid())
+                    .orElseThrow(() -> new ResourceNotFoundException("Post " + p.getPostid() + " Not Found!"));
+
+            newPost.setAuthor(
+                    newAuthor
+            );
 
             newAuthor.getPosts().add(newPost);
         }
