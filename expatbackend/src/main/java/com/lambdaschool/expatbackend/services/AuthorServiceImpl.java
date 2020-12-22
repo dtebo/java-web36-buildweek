@@ -57,9 +57,11 @@ public class AuthorServiceImpl implements AuthorService {
 
         newAuthor.getPosts().clear();
         for(Post p : author.getPosts()){
+            //Find the post in the repository, set it's author, and add it to the list of posts
             Post newPost = postRepository.findById(p.getPostid())
                     .orElseThrow(() -> new ResourceNotFoundException("Post " + p.getPostid() + " Not Found!"));
 
+            //Set the new author that is being created as the post author
             newPost.setAuthor(
                     newAuthor
             );
